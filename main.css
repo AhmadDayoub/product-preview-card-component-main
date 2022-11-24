@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.main {
+  display: flex;
+  width: 700px;
+  height: 560px;
+  margin: 50px auto;
+}
+@media (max-width: 375px) {
+  .main {
+    flex-direction: column;
+    width: 90%;
+    height: 716px;
+    /* border: 1px solid red; */
+    margin: 50px auto;
+  }
+}
+.main .left {
+  width: 50%;
+}
+@media (max-width: 375px) {
+  .main .left {
+    width: 100%;
+    height: 44%;
+    /* border: 1px solid red; */
+    margin: 0px;
+  }
+}
+.main .left img {
+  height: 100%;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+@media (max-width: 375px) {
+  .main .left img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+  }
+}
+
+.main .right {
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-left: 30px;
+  background-color: white;
+}
+@media (max-width: 375px) {
+  .main .right {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 18px;
+    height: 100%;
+  }
+}
+.main .right .head {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding: 20px 0px;
+  margin-top: 10px;
+}
+.main .right .se {
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+@media (max-width: 375px) {
+  .main .right .se {
+    font-size: 27px;
+  }
+}
+.main .right .par p {
+  color: hsl(228, 12%, 48%);
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 37px;
+}
+@media (max-width: 375px) {
+  .main .right .par p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.main .right .price {
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: hsl(158, 36%, 37%);
+  margin-top: 27px;
+  margin-right: 98px;
+}
+@media (max-width: 375px) {
+  .main .right .price {
+    font-size: 28px;
+  }
+}
+.main .right .price span {
+  font-size: 15px;
+  text-decoration: line-through;
+  font-family: "Fraunces", serif;
+  color: hsl(228, 12%, 48%);
+}
+@media (max-width: 375px) {
+  .main .right .price span {
+    margin-left: 20px;
+  }
+}
+.main .right button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 17px 92px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  border: none;
+}
+@media (max-width: 375px) {
+  .main .right button {
+    margin: 13px -12px;
+  }
+}
